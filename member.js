@@ -28,6 +28,31 @@ for (let key in classes) {
   nameList = '';
 }
 
+let manCount = 0;
+let womanCount = 0;
+let manNameList = '';
+let womanNameList = '';
+const secondParticipantMan = document.querySelector('#second-party-man');
+const secondParticipantWoman = document.querySelector('#second-party-woman');
+const secondCountMan = document.querySelector('#second-count-man');
+const secondCountWoman = document.querySelector('#second-count-woman');
+for (var i = 0; i < wholeData.length; i++) {
+  if (wholeData[i][1] == '1' && wholeData[i][6] == '○') {
+    manNameList += wholeData[i][4] + ', ';
+    manCount++;
+  }
+}
+secondParticipantMan.textContent = manNameList;
+secondCountMan.textContent = '男性 ' + manCount + '名';
+for (var i = 0; i < wholeData.length; i++) {
+  if (wholeData[i][1] == '2' && wholeData[i][6] == '○') {
+    womanNameList += wholeData[i][4] + ', ';
+    womanCount++;
+  }
+}
+secondParticipantWoman.textContent = womanNameList;
+secondCountWoman.textContent = '女性 ' + womanCount + '名';
+
 let participantCount = 0;
 const participantHeader  = document.querySelector('#participant-count')
 for (let key in classes) {

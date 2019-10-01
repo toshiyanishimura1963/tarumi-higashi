@@ -1,5 +1,4 @@
-//import { wholeData } from './data';
-// import { wholeData } from './data.js';
+import { wholeData } from './data.js';
 
 const classes = {
   1: '.first-class',

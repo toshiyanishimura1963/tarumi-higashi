@@ -1,0 +1,63 @@
+All-new high-performance Tailwind CLI
+We've rewritten the Tailwind CLI tool from the ground-up with a performance-first mindset, while also adding support for a bunch of new features.
+
+>> npx tailwindcss -i ./src/style.css -o sytle.css --watch --jit --purge="./**/*.html"
+
+
+Using a custom CSS file
+If you’d like to process any custom CSS alongside the default styles Tailwind generates, create a CSS file wherever you normally would and use the @tailwind directive to include Tailwind’s base, components, and utilities styles:
+
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-blue-600 text-white rounded;
+  }
+}
+
+
+@layer
+Use the @layer directive to tell Tailwind which “bucket” a set of custom styles belong to. Valid layers are a base, components, and utilities.
+
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer utilities {
+  @variants hover, focus {
+    .filter-none {
+      filter: none;
+    }
+    .filter-grayscale {
+      filter: grayscale(100%);
+    }
+  }
+}
+
+
+
+
+Then include the path to that file when building your CSS:
+
+>> npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css
+
+
+If you’d like to keep your config file in a different location or give it a different name, pass the config file path using the -c option when building your CSS:
+
+>> npx tailwindcss -i ./src/tailwind.css -c ./.config/tailwind.config.js -o ./dist/tailwind.css
+
+icon url
+https://heroicons.com/

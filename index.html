@@ -4,441 +4,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="style.css" rel="stylesheet">
   <title>垂水東中学校 同窓会</title>
-  <style>
-    header {
-      background:
-        url("https://lh3.googleusercontent.com/Z2NufTanL8tkcqNe-9yMJj6-aG4bnrCxoEWEhVzvLc0qZr4V11IrDJtlSbTfvvKtjTkETQcId0dTYKdz-oMvCSU7_U9ZpCjwSgKyRXtVRoIofQDLHnb-gZxaBfUYklhfp5fyFmYvP8U=d");
-      background-size: cover;
-      background-position: 40% 40%;
-      min-height: 500px;
-    }
-
-    @media screen and (max-width: 670px) {
-      header {
-        min-height: 500px;
-      }
-    }
-
-    .section {
-      padding-top: 2vw;
-      padding-bottom: 2vw;
-    }
-
-    .tabs .indicator {
-      background-color: #1a237e;
-    }
-
-    .tabs .tab a:focus,
-    .tabs .tab a:focus.active {
-      background: transparent;
-    }
-  </style>
 </head>
 
-<body>
+<body class="bg-gray-100 font-notoserif">
 
   <!-- navbar -->
-  <header>
-    <nav class="nav-wrapper blue-grey lighten-2">
-      <div class="container">
-        <a href="#" class="brand-logo">垂水東中学校 同窓会</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#news">お知らせ</a></li>
-          <li><a href="#party">概要</a></li>
-          <li><a href="#name-list">名簿</a></li>
-          <li><a href="#connect">連絡</a></li>
+  <header class="relative"
+    style="background:
+        url(https://lh3.googleusercontent.com/Z2NufTanL8tkcqNe-9yMJj6-aG4bnrCxoEWEhVzvLc0qZr4V11IrDJtlSbTfvvKtjTkETQcId0dTYKdz-oMvCSU7_U9ZpCjwSgKyRXtVRoIofQDLHnb-gZxaBfUYklhfp5fyFmYvP8U=d); background-position: 40% 40%; min-height: 500px; background-size: cover;">
+    <nav class="absolute top-0 left-0 bg-gray-400 w-full px-5 py-2">
+      <div class="container sm:flex justify-between items-center text-white">
+        <div class="flex justify-between items-center"><a href="#" class="text-4xl">垂水東中学校 同窓会</a>
+          <svg class="w-5 sm:hidden" id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+        <ul class="hidden sm:flex" id="menulist">
+          <li class="mx-2 mt-5 sm:mt-0"><a href="#news">お知らせ</a></li>
+          <li class="mx-2"><a href="#party">概要</a></li>
+          <li class="mx-2"><a href="#name-list">名簿</a></li>
+          <li class="mx-2"><a href="#connect">連絡</a></li>
         </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#news">お知らせ</a></li>
-          <li><a href="#party">概要</a></li>
-          <li><a href="#name-list">名簿</a></li>
-          <li><a href="#connect">連絡</a></li>
-        </ul>
+
       </div>
     </nav>
   </header>
 
   <!-- photo / grid -->
-  <section class="container section" id="news">
-    <ul class="collection with-header">
-      <li class="collection-header">
-        <h4>お知らせ</h4>
-      </li>
-      <li class="collection-item">
-        <h5>同窓会二次会のご案内</h5>
-        <p>当日にいきなり大人数ではいれる場所もないということで、二次会を準備しています｡
-          下記のような内容になっていますので、参加される方は西村までお願いします｡</p>
-        <table>
-          <tbody>
-            <tr>
-              <th>場所</th>
-              <td>磯料理とワイン「舵KOBE(かじ)」 <a href="https://kajikobe.owst.jp/">https://kajikobe.owst.jp/</a>
-              </td>
-            </tr>
-            <tr>
-              <th>日時</th>
-              <td>2019年10月20日(日) 15:30 ～ 17:30</td>
-            </tr>
-            <tr>
-              <th>会費</th>
-              <td>男性:3,500円、女性:2,000円</td>
-            </tr>
-            <tr>
-              <th>内容</th>
-              <td>飲み放題(食事は少なめになっています｡)</td>
-            </tr>
-          </tbody>
-        </table>
-        <table>
-          <tbody>
-            <tr>
-              <th>二次会参加予定者</th>
-            </tr>
-            <tr>
-              <th id="second-count-man"></th>
-            </tr>
-            <tr>
-              <td id="second-party-man"></td>
-            </tr>
-            <tr>
-              <th id="second-count-woman"></th>
-            </tr>
-            <tr>
-              <td id="second-party-woman"></td>
-            </tr>
-          </tbody>
-        </table>
-      </li>
-      <li class="collection-item">
-        <h5>同窓会の下見をかねたランチ会 ← 無事に終了しました｡</h5>
-        <p>どなたでも参加可能ですので、都合が悪くて同窓会に行けない
+  <div class="container mx-auto p-5 " id="news">
+    <h1 class="font-bold mb-6">お知らせ</h1>
+    <div class="grid md:grid-cols-2 gap-3">
+      <div class="container ml-5 border-2 border-solid border-gray-100 rounded-md p-5">
+        <h2 class="text-2xl">同窓会二次会のご案内</h2>
+        <p class="ml-5">当日にいきなり大人数ではいれる場所もないということで、二次会を準備しています｡</p>
+        <p class="text-base ml-5">下記のような内容になっていますので、参加される方は西村までお願いします｡</p>
+        <h3 class="text-xl mt-6">場所</h3>
+        <p class="text-base ml-5">磯料理とワイン「舵KOBE(かじ)」 <a href="https://kajikobe.owst.jp/">https://kajikobe.owst.jp/</a>
+        <h3 class="text-xl mt-4">日時</h3>
+        <p class="text-base ml-5">2019年10月20日(日) 15:30 ～ 17:30</p>
+        <h3 class="text-xl mt-4">会費</h3>
+        <p class="text-base ml-5">男性:3,500円、女性:2,000円</p>
+        <h3 class="text-xl mt-4">内容</h3>
+        <p class="text-base ml-5">飲み放題(食事は少なめになっています｡)</p>
+        <h3 class="text-xl mt-4">二次会参加予定者</h3>
+        <h3 class="text-base font-bold ml-5 mb-1" id="second-count-man"></h3>
+        <p class="text-base ml-5 mb-2" id="second-party-man"></p>
+        <h3 class="text-base  font-bold ml-5 mb-1" id="second-count-woman"></h3>
+        <p class="text-base ml-5 mb-2" id="second-party-woman"></p>
+      </div>
+
+      <div class="container ml-5 border-2 border-solid border-gray-100 rounded-md p-5">
+        <h2 class="text-2xl">同窓会の下見をかねたランチ会 ← 無事に終了しました｡</h2>
+        <p class="text-base ml-5">どなたでも参加可能ですので、都合が悪くて同窓会に行けない
           という方も誘いあわせてご参加ください。
           当日は、食事の前に12時ごろからお店を下見させてもらって、
           受付場所の確認などを行う予定です。
           参加の申し込みは西村まで。締め切りは 8月18日(日)です。</p>
-        <table>
-          <tbody>
-            <tr>
-              <th>場所</th>
-              <td>神戸北野のパラディ北野 <a
-                  href="http://paradis-kitano.gourmet.coocan.jp/restaurant.html">http://paradis-kitano.gourmet.coocan.jp/restaurant.html</a>
-              </td>
-            </tr>
-            <tr>
-              <th>日時</th>
-              <td>2019年9月8日(日) 12:30 ～ 14:30</td>
-            </tr>
-            <tr>
-              <th>会費</th>
-              <td>4,500円(予定)</td>
-            </tr>
-            <tr>
-              <th>食事</th>
-              <td>ランチコース + 飲み放題</td>
-            </tr>
-          </tbody>
-        </table>
-      </li>
-    </ul>
-  </section>
-  <section class="container section" id="party">
-    <h4>同窓会 概要</h4>
-    <div class="row">
-      <div class="col s12 l6">
-        <table>
-          <tbody>
-            <tr>
-              <th>年月日</th>
-              <td>2019年10月20日(日)</td>
-            </tr>
-            <tr>
-              <th>時間</th>
-              <td>12時 〜 15時</td>
-            </tr>
-            <tr>
-              <th>場所</th>
-              <td>レストラン - 花の館 パラディ北野</td>
-            </tr>
-            <tr>
-              <td><img src="./img/レストラン - 花の館 パラディ北野.jpg" alt="パラディ北野" width="150px"></td>
-              <td><img src="./img/レストラン - 花の館 パラディ北野室内.jpg" alt="パラディ北野" width="150px"></td>
-            </tr>
-            <tr>
-              <th>アクセス</th>
-              <td>三宮駅から徒歩12分〜15分｡新神戸駅から徒歩10分｡<br><a
-                  href="http://paradis-kitano.gourmet.coocan.jp/access.html">http://paradis-kitano.gourmet.coocan.jp/access.html</a>
-              </td>
-            </tr>
-            <tr>
-              <th>その他</th>
-              <td>
-                <p>今回は先生方を呼ばない予定です｡</p>
-                <p>同級生メンバーによるバンド演奏します｡
-                  バンドに参加する方を募集！特に、キーボード、パーカッション｡
-                  バンドに演奏して欲しい曲(みんなで盛り上がれる？)を募集(締め切りは、練習する時間が必要なため 8月20日)！</p>
-                <p>同窓会で実施する企画、イベントを募集！</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <h3 class="text-xl mt-6">場所</h3>
+        <p class="text-base ml-5">神戸北野のパラディ北野 <a
+            href="http://paradis-kitano.gourmet.coocan.jp/restaurant.html">http://paradis-kitano.gourmet.coocan.jp/restaurant.html</a>
+        </p>
+        <h3 class="text-xl mt-6">日時</h3>
+        <p class="text-base ml-5">2019年9月8日(日) 12:30 ～ 14:30</p>
+        <h3 class="text-xl mt-6">会費</h3>
+        <p class="text-base ml-5">4,500円(予定)</p>
+        <h3 class="text-xl mt-6">食事</h3>
+        <p class="text-base ml-5">ランチコース + 飲み放題</p>
       </div>
     </div>
+  </div>
+
+  <div class="container mx-auto p-5 " id="party">
+    <h1 class="text-3xl  font-bold mb-6">同窓会 概要</h1>
+    <h3 class="text-xl mt-6">年月日</h3>
+    <p class="text-base ml-5">2019年10月20日(日)</td>
+    <h3 class="text-xl mt-6">時間</h3>
+    <p class="text-base ml-5">12時 〜 15時</td>
+    <h3 class="text-xl mt-6">場所</h3>
+    <p class="text-base ml-5">レストラン - 花の館 パラディ北野</td>
+    <p class="text-base ml-5"><img src="./img/レストラン - 花の館 パラディ北野.jpg" alt="パラディ北野" width="150px"></td>
+    <p class="text-base ml-5"><img src="./img/レストラン - 花の館 パラディ北野室内.jpg" alt="パラディ北野" width="150px"></td>
+    <h3 class="text-xl mt-6">アクセス</h3>
+    <p class="text-base ml-5">三宮駅から徒歩12分〜15分｡新神戸駅から徒歩10分｡<br><a
+        href="http://paradis-kitano.gourmet.coocan.jp/access.html">http://paradis-kitano.gourmet.coocan.jp/access.html</a>
+    <h3 class="text-xl mt-6">その他</h3>
+    <p>今回は先生方を呼ばない予定です｡</p>
+    <p>同級生メンバーによるバンド演奏します｡
+      バンドに参加する方を募集！特に、キーボード、パーカッション｡
+      バンドに演奏して欲しい曲(みんなで盛り上がれる？)を募集(締め切りは、練習する時間が必要なため 8月20日)！</p>
+    <p>同窓会で実施する企画、イベントを募集！</p>
+
     <div class="row">
       <div class="col s12 l6">
         <table id="participant">
-          <thead>
-            <tr>
-              <th></th>
-              <th id="participant-count"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>1組</th>
-              <td class="first-class"></td>
-            </tr>
-            <tr>
-              <th>2組</th>
-              <td class="second-class"></td>
-            </tr>
-            <tr>
-              <th>3組</th>
-              <td class="third-class"></td>
-            </tr>
-            <tr>
-              <th>4組</th>
-              <td class="fourth-class"></td>
-            </tr>
-            <tr>
-              <th>5組</th>
-              <td class="fifth-class"></td>
-            </tr>
-            <tr>
-              <th>6組</th>
-              <td class="sixth-class"></td>
-            </tr>
-            <tr>
-              <th>7組</th>
-              <td class="seventh-class"></td>
-            </tr>
-            <tr>
-              <th>転校組</th>
-              <td class="eighth-class"></td>
-            </tr>
-          </tbody>
+          <th id="participant-count"></th>
+          <th>1組</th>
+          <td class="first-class"></td>
+          <th>2組</th>
+          <td class="second-class"></td>
+          <th>3組</th>
+          <td class="third-class"></td>
+          <th>4組</th>
+          <td class="fourth-class"></td>
+          <th>5組</th>
+          <td class="fifth-class"></td>
+          <th>6組</th>
+          <td class="sixth-class"></td>
+          <th>7組</th>
+          <td class="seventh-class"></td>
+          <th>転校組</th>
+          <td class="eighth-class"></td>
         </table>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
+  </div>
 
-  <section class="container section" id="name-list">
-    <h4>同窓会名簿</h4>
+  <section class="container" id="name-list">
+    <h2>同窓会名簿</h2>
     <p>写真クリックで拡大します</p>
-    <div class="row">
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://lh3.googleusercontent.com/D5g3KKYSvrSUvNiC8lbe9regCAoLWOP_7L0q2AsDP0-ENU6-AN-KiHPAF3yqy1n_XOYU12xZqsS-oZj9gLk_RCrLSWjd75V_WVMxNYM7UqKQi0TmtWity03yjAOvHiJlUfgCsmYrwSo=d"
-              class="responsive-img materialboxed">
-            <span class="card-title yellow-text text-accent-2">1組 畦地学級</span>
-          </div>
-          <div class="card-content">
-            <p class="first-class"></p>
-          </div>
+    <div class="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://lh3.googleusercontent.com/D5g3KKYSvrSUvNiC8lbe9regCAoLWOP_7L0q2AsDP0-ENU6-AN-KiHPAF3yqy1n_XOYU12xZqsS-oZj9gLk_RCrLSWjd75V_WVMxNYM7UqKQi0TmtWity03yjAOvHiJlUfgCsmYrwSo=d"
+            class="responsive-img materialboxed">
+          <span class="card-title yellow-text text-accent-2">1組 畦地学級</span>
+        </div>
+        <div class="card-content">
+          <p class="first-class"></p>
         </div>
       </div>
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://lh3.googleusercontent.com/H7lg5XKcF_SQKUmwtXg2zO2ya7xRG3kIxVEEZbb8YG8EAEH0tuoOl82ozNZ1S2Xnx4ydMdExYAdVFMFAdagf8lXzqeElajyMe72La0NLzfm9Y6_K3M3fG8yibpJtVJgf8tqLePQXugI=d"
-              class="responsive-img materialboxed">
-            <span class="card-title yellow-text text-accent-2">2組 沢本学級</span>
-          </div>
-          <div class="card-content">
-            <p class="second-class"></p>
-          </div>
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://lh3.googleusercontent.com/H7lg5XKcF_SQKUmwtXg2zO2ya7xRG3kIxVEEZbb8YG8EAEH0tuoOl82ozNZ1S2Xnx4ydMdExYAdVFMFAdagf8lXzqeElajyMe72La0NLzfm9Y6_K3M3fG8yibpJtVJgf8tqLePQXugI=d"
+            class="responsive-img materialboxed">
+          <span class="card-title yellow-text text-accent-2">2組 沢本学級</span>
+        </div>
+        <div class="card-content">
+          <p class="second-class"></p>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://lh3.googleusercontent.com/n74dDvJrfSxCnKw_jJ0WcO2H1HgI-yOo5m4KPMeU6EbicGL03DmsXD-r_q00tJp9t0KTvlCl1T6hjgVsmTvuIwCBMsChfZXwu86KfJxI3UFR9Z3RGq0aM0z46pNfsyDZCi-wXziw8CM=d"
-              class="responsive-img materialboxed">
-            <span class="card-title yellow-text text-accent-2">3組 高本学級</span>
-          </div>
-          <div class="card-content">
-            <p class="third-class"></p>
-          </div>
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://lh3.googleusercontent.com/n74dDvJrfSxCnKw_jJ0WcO2H1HgI-yOo5m4KPMeU6EbicGL03DmsXD-r_q00tJp9t0KTvlCl1T6hjgVsmTvuIwCBMsChfZXwu86KfJxI3UFR9Z3RGq0aM0z46pNfsyDZCi-wXziw8CM=d"
+            class="responsive-img materialboxed">
+          <span class="card-title yellow-text text-accent-2">3組 高本学級</span>
+        </div>
+        <div class="card-content">
+          <p class="third-class"></p>
         </div>
       </div>
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://lh3.googleusercontent.com/uZRuxwIuv9IaHGc6Q0ke7YlT0QpntAyHRKtyeIDraEDcVF9xQnOjU9cF6WnnwNzn73iyCf4X258_DHLCH4szuEdM3-qv99Lw8V2b9MpaUp6SZmImRS3kkZhhGcQBXrymlIxZiLQZt0w=d"
-              class="responsive-img materialboxed">
-            <span class="card-title yellow-text text-accent-2">4組 富田学級</span>
-          </div>
-          <div class="card-content">
-            <p class="fourth-class"></p>
-          </div>
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://lh3.googleusercontent.com/uZRuxwIuv9IaHGc6Q0ke7YlT0QpntAyHRKtyeIDraEDcVF9xQnOjU9cF6WnnwNzn73iyCf4X258_DHLCH4szuEdM3-qv99Lw8V2b9MpaUp6SZmImRS3kkZhhGcQBXrymlIxZiLQZt0w=d"
+            class="responsive-img materialboxed">
+          <span class="card-title yellow-text text-accent-2">4組 富田学級</span>
+        </div>
+        <div class="card-content">
+          <p class="fourth-class"></p>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://lh3.googleusercontent.com/D6TWfAEHztgKxAI9VHsMeN4JnWVCdvHXXeF2X-UTehj_Z96gggD4j-X3W0xRAKrdrLbv5CY1qc0646h8ICNjQ1PmMUKvWUrxh3snWcvHJqz25GjAjrnfCepf-XVFuf3EWx-NWCNaguc=d"
-              class="responsive-img materialboxed">
-            <span class="card-title yellow-text text-accent-2">5組 向井学級</span>
-          </div>
-          <div class="card-content">
-            <p class="fifth-class"></p>
-          </div>
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://lh3.googleusercontent.com/D6TWfAEHztgKxAI9VHsMeN4JnWVCdvHXXeF2X-UTehj_Z96gggD4j-X3W0xRAKrdrLbv5CY1qc0646h8ICNjQ1PmMUKvWUrxh3snWcvHJqz25GjAjrnfCepf-XVFuf3EWx-NWCNaguc=d"
+            class="responsive-img materialboxed">
+          <span class="card-title yellow-text text-accent-2">5組 向井学級</span>
+        </div>
+        <div class="card-content">
+          <p class="fifth-class"></p>
         </div>
       </div>
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://lh3.googleusercontent.com/qAxLEbY3QIJ5E-DFh5pSQUlljjxiBFSPlW0xErehCXuN01VDh77Veo3rPjIrfmaKLSgkIskKBa5Gu-OQOxT9fCDLxmZ-i2QXWurORRisj_WK_9Md91lc0PE04CwRlvGvGdoh_jI1Uys=d"
-              class="responsive-img materialboxed">
-            <span class="card-title yellow-text text-accent-2">6組 岩永学級</span>
-          </div>
-          <div class="card-content">
-            <p class="sixth-class"></p>
-          </div>
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://lh3.googleusercontent.com/qAxLEbY3QIJ5E-DFh5pSQUlljjxiBFSPlW0xErehCXuN01VDh77Veo3rPjIrfmaKLSgkIskKBa5Gu-OQOxT9fCDLxmZ-i2QXWurORRisj_WK_9Md91lc0PE04CwRlvGvGdoh_jI1Uys=d"
+            class="responsive-img materialboxed">
+          <span class="card-title yellow-text text-accent-2">6組 岩永学級</span>
+        </div>
+        <div class="card-content">
+          <p class="sixth-class"></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img class="hover:transform hover:scale-150"
+            src="https://lh3.googleusercontent.com/GJYGRY_dP7nOL5-qIc7jNjaJelC8ZEAy714VZ7EkgLeWBQjeRZZrRiztTy2O_COucqgi8g46gH_FnsDbqGqGrYw8MrWcQc8x7SltxeA_YVWgcgTMxBM1r5fjJ3xGAHD_xwBKMRWhzX0=d">
+          <span class="card-title yellow-text text-accent-2">7組 土屋学級</span>
+        </div>
+        <div class="card-content">
+          <p class="seventh-class"></p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://lh3.googleusercontent.com/GJYGRY_dP7nOL5-qIc7jNjaJelC8ZEAy714VZ7EkgLeWBQjeRZZrRiztTy2O_COucqgi8g46gH_FnsDbqGqGrYw8MrWcQc8x7SltxeA_YVWgcgTMxBM1r5fjJ3xGAHD_xwBKMRWhzX0=d"
-              class="responsive-img materialboxed">
-            <span class="card-title yellow-text text-accent-2">7組 土屋学級</span>
+    <p class="eighth-class" style="display: none;"></p>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3" id="connect">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>連絡について</h5>
+            <p></p>
           </div>
-          <div class="card-content">
-            <p class="seventh-class"></p>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li>こちらの<a class="red-text"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeLPR0GJ6zS-Jp57EDnTcCgqoAOqadEy8jAuDhteRNCw1D3yQ/viewform">連絡先入力フォーム</a>より、連絡先を入力してください｡折り返して連絡させていただきます｡
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-    <p class="eighth-class" style="display: none"></p>
-  </section>
-
-  <!-- footer -->
-  <footer class="page-footer grey darken-3" id="connect">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5>連絡について</h5>
-          <p></p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li>こちらの<a class="red-text"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeLPR0GJ6zS-Jp57EDnTcCgqoAOqadEy8jAuDhteRNCw1D3yQ/viewform">連絡先入力フォーム</a>より、連絡先を入力してください｡折り返して連絡させていただきます｡
-            </li>
-          </ul>
-        </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">2019 西村 俊哉</div>
       </div>
-    </div>
-    <div class="footer-copyright grey darken-4">
-      <div class="container center-align">2019 西村 俊哉</div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- <script>
-    let testData;
-
-    function makeApiCall() {
-      var params = {
-        spreadsheetId: '1qyszmABWmR896zRAOyXygRUqfzO-_dQmAsSvlDzzKaw', // TODO: Update placeholder value.
-        range: '名簿!A1:AB354', // TODO: Update placeholder value.
-        valueRenderOption: 'FORMATTED_VALUE', // TODO: Update placeholder value.
-        dateTimeRenderOption: 'SERIAL_NUMBER', // TODO: Update placeholder value.
-      };
-
-      var request = gapi.client.sheets.spreadsheets.values.get(params);
-      request.then(function (response) {
-        console.log(response.result.values);
-        testData = response.result.values;
-      }, function (reason) {
-        console.error('error: ' + reason.result.error.message);
-      });
-    }
-
-    function initClient() {
-      var API_KEY = 'AIzaSyASjtRxv7lDO21UuvVPkkGm6LqZFUj4kIc'; // TODO: Update placeholder with desired API key.
-      var CLIENT_ID = '588118532290-f7pbnpvi9fhbc8k94ck69ed2pt0q7m5q.apps.googleusercontent.com';
-      var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
-
-      gapi.client.init({
-        'apiKey': API_KEY,
-        'clientId': CLIENT_ID,
-        'scope': SCOPE,
-        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-      }).then(function () {
-        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
-        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-      });
-    }
-
-    function handleClientLoad() {
-      gapi.load('client:auth2', initClient);
-    }
-
-    function updateSignInStatus(isSignedIn) {
-      if (isSignedIn) {
-        makeApiCall();
-      }
-    }
-
-    function handleSignInClick(event) {
-      gapi.auth2.getAuthInstance().signIn();
-    }
-
-    function handleSignOutClick(event) {
-      gapi.auth2.getAuthInstance().signOut();
-    }
-  </script>
-  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
-    onreadystatechange="if (this.readyState === 'complete') this.onload()">
-  </script> -->
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.sidenav').sidenav();
-      $('.materialboxed').materialbox();
-    });
-  </script>
-  <!-- <script src="data.js"></script> -->
-  <script type="module" src="member.js"></script>
+    <script type="module" src="member.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

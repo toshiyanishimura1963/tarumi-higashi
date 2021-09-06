@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         notoserif: ["Noto Serif JP"],
-        notosans: ["Noto Sans JP"],
+        notosans: ["Noto Sans JP"]
       },
     },
   },

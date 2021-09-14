@@ -6,12 +6,12 @@
 
 @layer base {
   h1 {
-    @apply text-3xl font-bold font-sans;
+    @apply text-2xl md:text-3xl font-bold font-notosans my-6;
   }
   h2 {
-    @apply text-2xl font-bold font-sans;
+    @apply text-xl md:text-2xl font-bold font-notosans my-4;
   }
   h3 {
-    @apply text-xl font-bold font-sans;
+    @apply text-base md:text-xl font-bold font-notosans my-2;
   }
 }
